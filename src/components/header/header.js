@@ -8,12 +8,13 @@ class Header extends Component {
 
      this.dropDownMenu = this.dropDownMenu.bind(this)
 
-    this.navigationItems={
+    this.navigationItems = {
       items:[
         { link:'/',name:'Home' },
         { link:'/arrayanes/instalaciones',name:'Instalaciones' },
         { link:'/arrayanes/servicios',name:'Servicios' },
-        { link:'/arrayanes/contacto',name:'Contacto' }
+        { link:'/arrayanes/contacto',name:'Contacto' },
+        { link:'/arrayanes/reglamento',name:'Reglamento' }
       ]
     }
   }
