@@ -1,6 +1,7 @@
 import React,{ Component } from 'react';
 import Header from '../header/header';
 import MainContent from '../mainContent/mainContent';
+import Footer from '../footer/footer';
 import '../../assets/css/styles.min.css';
 
 class AppHolder extends Component{
@@ -28,7 +29,8 @@ class AppHolder extends Component{
     return(
       <div className="app">
         <Header classHeader={this.state.one}/>
-        <MainContent />
+          <MainContent />
+        <Footer />
       </div>
     )
   }

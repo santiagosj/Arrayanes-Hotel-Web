@@ -1,5 +1,5 @@
 @import "./_default.scss";
-
+@import url('https://fonts.googleapis.com/css?family=Unica+One');
 .scrollNone {
       background-color: initial;
       position: fixed;
@@ -12,26 +12,39 @@
       transition: background-color 1s ease 0s,height 1s ease 0s;
  }
 
-nav {
-    position: relative;
-    top: 57px;
-    text-align: center;
+.scrollNone nav{
+  position: relative;
+  top: 64%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.scrollNone nav ul, li {
+  margin: 0;
+  padding: 0;
 }
 
 .navMobile {
   display: none;
 }
 
-.img-header{
-  height: 180px;
+.headImg {
   width: 100%;
-  filter:brightness(60%);
-  background-size: cover;
+  height: 300px;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  -webkit-filter: brightness(.6);
+  filter: brightness(.6);
 }
 
-.img-home{
-  background-image: url(https://images.unsplash.com/photo-1494206408941-90bd187320a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+.hero {
+    background-image: url(https://cdn.miraargentina.com/original/be/01/3c/_rio-arrayanes-1-1338060112.jpg);
 }
 
 li{
@@ -50,4 +63,25 @@ a::after {
 a:hover::after {
     width: 100%;
     // transition: width .3s;
+}
+
+.headImg .eslogan, .headImg .marca {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    font-weight: lighter;
+}
+
+.headImg .marca {
+    top: 160px;
+    font-size: 20vw;
+    color: #ffc050;
+    bottom: 430px;
+    font-family: 'Unica One', cursive;
+}
+
+.headImg .eslogan {
+    font-size: 2rem;
+    color: #fff;
+    top: 200px;
 }
