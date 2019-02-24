@@ -7,6 +7,7 @@ const styles = {
   padding:0,
   height: '-webkit-fill-available'
 }
+
 class Home extends Component{
   render(){
     return(
@@ -15,7 +16,7 @@ class Home extends Component{
           <h1 className="marca">ARRAYANES</h1>
           <h2 className="eslogan">TU ALOJAMIENTO TURÍSTICO</h2>
         </div>
-          <div className="about-1">
+          <div className="about-1 container">
            <div className="box-1">
              <h1>Bienvenidos</h1>
               <h2>En Departamentos Arrayanes su confort y tranquilidad es nuestra nuestra prioridad</h2>
@@ -29,7 +30,7 @@ La opción en alojamiento turístico ideal para la familia.A solo cinco cuadras 
 
           <br/><br/>
 
-      <div className="about-2">
+      <div className="about-2 container">
         <div className="box-3">
           <h2>Sobre Nosotros</h2>
            <p>Somos una pequeña empresa familiar dedicada al alojamiento turístico en Alta Gracia, y este es el ambiente con el que será recibido, un ambiente familiar y tranquilo.

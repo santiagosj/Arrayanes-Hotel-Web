@@ -12,7 +12,7 @@
       transition: background-color 1s ease 0s,height 1s ease 0s;
  }
 
-.scrollNone nav{
+.scrollNone nav {
   position: relative;
   top: 64%;
   display: flex;
@@ -26,6 +26,11 @@
 .scrollNone nav ul, li {
   margin: 0;
   padding: 0;
+}
+
+.scrollNone a:hover {
+    transition: .4s ease-in-out;
+    color: #ffc050;
 }
 
 .navMobile {
@@ -56,13 +61,17 @@ a::after {
     display: block;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: #ffc050;
     transition: width .3s ;
 }
 
 a:hover::after {
     width: 100%;
     // transition: width .3s;
+}
+a:hover {
+  color:white;
+  text-decoration: none;
 }
 
 .headImg .eslogan, .headImg .marca {
@@ -84,4 +93,35 @@ a:hover::after {
     font-size: 2rem;
     color: #fff;
     top: 200px;
+}
+
+                                //HOME CONTENT
+//==============================================================================
+
+  .about-1 .box-2 img {
+    width: 500px;
+  }
+
+  .about-2 .box-4 img{
+    width: auto;
+    height: 500px;
+  }
+
+                              //CONTACTO
+  //============================================================================
+
+.cont{
+  background-image: url(https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+.regl{
+  background-image: url(https://images.unsplash.com/photo-1529636444744-adffc9135a5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=854&q=80);
+}
+
+.serv{
+  background-image: url(https://images.unsplash.com/photo-1521120367316-e47e63ca9913?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+.inst{
+  background-image: url(https://images.unsplash.com/photo-1445991842772-097fea258e7b?auto=format&fi…faWQiOjEyMDd9&ixlib=rb-0.3.5&q=80&s=a9a4d58…&w=750);
 }
