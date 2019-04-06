@@ -4,7 +4,9 @@ class Servicios extends Component {
   render(){
     return(
       <section className="mainServ">
-        <div className="headImg serv"></div>
+        <div className="headImg serv">
+            <div className="maskPages"></div> 
+        </div>
           <h1>Nuestros servicios</h1>
            <div className="container">
 

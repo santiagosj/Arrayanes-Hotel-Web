@@ -5,7 +5,9 @@ class Contacto extends Component {
   render(){
     return(
       <section className="mainContact">
-       <div className="headImg cont"></div>
+       <div className="headImg cont">
+       <div className="maskPages"></div> 
+       </div>
         <div className="container">
           <h1>Formulario de Contacto</h1>
           <Form />

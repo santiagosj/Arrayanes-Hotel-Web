@@ -4,7 +4,9 @@ class Reglamento extends Component {
   render(){
     return(
       <section className="mainReserve">
-      <div className="headImg regl"></div>
+      <div className="headImg regl">
+         <div className="maskPages"></div> 
+      </div>
          <br/>
          <div className="container">
             <h1>Reglamento de Reserva</h1>

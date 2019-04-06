@@ -6,7 +6,11 @@ class Instalaciones extends Component {
   render(){
     return(
       <section className="mainInst">
-        <div className="headImg inst"></div>
+      
+        <div className="headImg inst">
+            <div className="maskPages"></div> 
+        </div>
+
           <h1>Nuestras Instalaciones</h1>
             <div className="container">
 
