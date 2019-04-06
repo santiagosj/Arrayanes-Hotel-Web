@@ -22,24 +22,34 @@ class Header extends Component {
   render(){
     return(
       <header className={`${this.props.classHeader}`}>
+
          <nav>
+
            <div className="navUl">
              <ul>
                {this.navigationItems.items.map((item, i)=> <NavItem key={i} data={item} /> )}
              </ul>
            </div>
+
             <div className="navMobile">
               <i className="fa fa-bars icon" onClick={this.dropDownMenu}></i>
               <ul className="dropDownLinks">{this.navigationItems.items.map((item,i)=><NavItem key={i} data={item} />)}</ul>
             </div>
+
          </nav>
+
       </header>
     )
   }
 
   dropDownMenu(){
        let links = document.querySelector('.dropDownLinks')
-       links.style.display === 'block' ? links.style.display ='none' : links.style.display ='block';
+       if(links.style.display === 'block'){
+         links.style.display = 'none';
+       }else{
+        links.style.display = 'block';
+       }
+      //links.style.display === 'block' ? links.style.display ='none' : links.style.display ='block';
     }
 
 }

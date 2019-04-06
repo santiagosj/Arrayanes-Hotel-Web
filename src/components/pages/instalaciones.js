@@ -12,10 +12,19 @@ class Instalaciones extends Component {
         </div>
 
           <h1>Nuestras Instalaciones</h1>
+
+            <br/>
+
             <div className="container">
 
               <div className ="dpto1">
+
                 <h2>Instalaciones Dpto 1</h2>
+
+                  <br/>
+                    <hr/>
+                  <br/>
+
                   <ul>
                     <li>Capacidad para 6 personas</li>
                     <li>Dos dormitorios (Matrimonial y habitación con 4 camas)</li>
@@ -30,6 +39,7 @@ class Instalaciones extends Component {
                     <br />
                     <li><Galeria className="buttonGallery"/></li>
                   </ul>
+
                </div>
 
                   <br/>
@@ -54,6 +64,10 @@ class Instalaciones extends Component {
 
               </div>
 
+                <br/>
+                  <hr/>
+                <br/>
+                
            </section>
     )
   }

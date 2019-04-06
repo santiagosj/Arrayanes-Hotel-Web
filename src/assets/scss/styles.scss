@@ -1,6 +1,10 @@
 @import "./_default.scss";
 @import url('https://fonts.googleapis.com/css?family=Unica+One');
 @import url('https://fonts.googleapis.com/css?family=Questrial');
+
+
+                                  //MENU
+//==========================================================================
 .scrollNone {
       background-color: initial;
       position: fixed;
@@ -43,14 +47,10 @@
 .mask{
   background-color: #00000073;
   width: 100%;
-  position: absolute;
-  height: 100%;
+  position: relative;
+  height: -webkit-fill-available;
 }
-.maskPages{
-  background-color: #00000073;
-  width: 100%;
-  height: 100%;
-}
+
 .headImg {
   width: 100%;
   height: 300px;
@@ -89,38 +89,45 @@ a:hover {
 .headImg .eslogan, .headImg .marca {
     margin: 0;
     text-align: center;
-    position: relative;
+    position: absolute;
     font-weight: lighter;
 }
 
 .headImg .marca {
-    top: 160px;
-    font-size: 20vw;
-    color: #ffc050;
-    bottom: 430px;
-    font-family: 'Unica One', cursive;
+  position: relative;
+  font-size: 20vw;
+  color: #ffc050;
+  bottom: 500px;
+  font-family: 'Unica One',cursive;
 }
 
 .headImg .eslogan {
-    font-size: 2rem;
-    color: #fff;
-    top: 200px;
+  position: relative;
+  font-size: 2rem;
+  color: #fff;
+  bottom: 447px;
 }
 
                                 //HOME CONTENT
 //==============================================================================
-
+  //Content 1
   .about-1 .box-2 img {
     width: 500px;
   }
-
+  //Content 2
   .about-2 .box-4 img{
     width: auto;
     height: 500px;
   }
 
-                              //CONTACTO
+                                    //PAGES
   //============================================================================
+
+  .maskPages{
+    background-color: #00000073;
+    width: 100%;
+    height: 100%;
+  }
 
 .cont{
   background-image: url(https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
@@ -136,4 +143,17 @@ a:hover {
 
 .inst{
   background-image: url(https://images.unsplash.com/photo-1445991842772-097fea258e7b?auto=format&fi…faWQiOjEyMDd9&ixlib=rb-0.3.5&q=80&s=a9a4d58…&w=750);
+}
+
+
+                                      //MEDIA--QUERIES
+//===============================================================================
+
+//Landing
+
+@media screen and (max-width:600px){
+  .cartel{
+    position: relative;
+      top: 100px;
+  }
 }
