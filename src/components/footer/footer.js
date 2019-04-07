@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const stylesFooter = {
   width:'100%',
-  height:150,
+  height:'100%',
   backgroundColor:'#00000052',
   textAlign:'center'
 }

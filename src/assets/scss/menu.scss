@@ -1,4 +1,5 @@
 @import "./_default.scss";
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
 
 .scroll {
     background-color: rgba(0,0,0,.72);
@@ -8,7 +9,7 @@
     width: 100%;
     height: 75px;
     top: 0;
-    font-family: Anton,sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
     z-index: 100;
     transition: background-color 1s ease 0s,height 1s ease 0s;
 }
@@ -31,8 +32,13 @@
 
 .scroll a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     line-height: normal;
     padding: 15px;
     color: #fff;
+}
+
+.scroll a:hover {
+  transition: .4s ease-in-out;
+  color: #ffc050;
 }

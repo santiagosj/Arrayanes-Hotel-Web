@@ -1,6 +1,7 @@
 @import "./_default.scss";
 @import url('https://fonts.googleapis.com/css?family=Unica+One');
-@import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
 
 
                                   //MENU
@@ -12,7 +13,7 @@
       width: 100%;
       height: 180px;
       top: 0;
-      font-family: 'Questrial', sans-serif;
+      font-family: 'Julius Sans One', sans-serif;
       z-index: 100;
       transition: background-color 1s ease 0s,height 1s ease 0s;
  }
@@ -41,6 +42,30 @@
 .navMobile {
   display: none;
 }
+
+li{
+  margin-bottom: 10px;
+}
+
+a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffc050;
+  transition: width .3s ;
+}
+
+a:hover::after {
+  width: 100%;
+  // transition: width .3s;
+}
+a:hover {
+color:white;
+text-decoration: none;
+}
+
+
                                 //LANDING
 //==============================================================================//
 
@@ -64,28 +89,6 @@
     background-image: url(https://cdn.miraargentina.com/original/be/01/3c/_rio-arrayanes-1-1338060112.jpg);
 }
 
-li{
-    margin-bottom: 10px;
-}
-
-a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #ffc050;
-    transition: width .3s ;
-}
-
-a:hover::after {
-    width: 100%;
-    // transition: width .3s;
-}
-a:hover {
-  color:white;
-  text-decoration: none;
-}
-
 .headImg .eslogan, .headImg .marca {
     margin: 0;
     text-align: center;
@@ -95,10 +98,10 @@ a:hover {
 
 .headImg .marca {
   position: relative;
-  font-size: 20vw;
+  font-size: 15vw;
   color: #ffc050;
   bottom: 500px;
-  font-family: 'Unica One',cursive;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .headImg .eslogan {
@@ -156,4 +159,47 @@ a:hover {
     position: relative;
       top: 100px;
   }
+}
+
+@media screen and(max-width:850px){
+  .navUl{
+    display:none;
+  }
+  .navMobile{
+    transition: .4s ease-in-out;
+    display: block;
+    
+
+    ul{
+      position: absolute;
+      left:0;
+      top: 36px;
+      background-color:#000000a6;
+      width: 100%;
+      padding: 20px;
+      height: 400px;
+    }   
+    li{
+      display: inline-block;
+      width: 100%;
+      height: 74.4px;
+    }
+    li:hover{
+      transition: .4s ease-in-out;
+      background-color:#000000a6; 
+    }
+    a{
+      position: absolute;
+      font-size: 29px;
+      line-height: 58px;
+      
+      color: #fff;
+      text-decoration: none;
+    }
+    i{
+      color:white;
+      font-size: xx-large;
+    }
+  }
+ 
 }
