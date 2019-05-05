@@ -1,25 +1,20 @@
 import React,{ Component } from 'react';
 import image1 from '../../assets/images/CAM00268.jpg'
 import image2 from '../../assets/images/dpto1.jpg'
-
-const styles = {
-  margin:0,
-  padding:0,
-  height: '-webkit-fill-available'
-}
+import Video from '../videoLan/video'
 
 class Home extends Component{
   render(){
     return(
       <section> 
 
-        <div style={styles} className="headImg hero">
-
-          <div className="mask"></div>
-            <div className="container cartel">
-               <h1 className="marca">ARRAYANES</h1>
-               <h2 className="eslogan">TU ALOJAMIENTO TURÍSTICO</h2>
-            </div>
+        <div className="contenedor">
+             <div className="mask"></div>
+             <Video />
+             
+                <h1>ARRAYANES</h1>
+                <h2>TU ALOJAMIENTO TURÍSTICO</h2>
+             
         </div>
 
           <br/>
@@ -29,18 +24,18 @@ class Home extends Component{
             <div className="about-1">
               <div className="box-1">
 
-                <h1>Bienvenidos</h1>
+                 <h1>Bienvenidos</h1>
 
-                <hr/>
+                 <hr/>
 
-                <h2>En Departamentos Arrayanes su confort y tranquilidad es nuestra nuestra prioridad</h2>
-                <p>Ubicados en uno de los barrios mas tranquilos de Alta Gracia, Departamentos Arrayanes cuenta con las instalaciones perfectas para que sus merecidas vacaciones sean vividas con toda la tranquilidad que necesita.
-La opción en alojamiento turístico ideal para la familia.A solo cinco cuadras del centro de la ciudad, encontrará en esta zona la comodidad y la fácil accesibilidad  si desea salir a comer o abastecerse de bienes y servicios durante su estadía. También así Alta Gracia cuenta con una posición privilegiada, ya que si usted desea visitar sus alrededores lograra hacerlo en tan solo unos pocos kilómetros. Vengan a conocernos!.</p>
-            </div>
+                 <h2>En Departamentos Arrayanes su confort y tranquilidad es nuestra nuestra prioridad</h2>
+                 <p>Ubicados en uno de los barrios mas tranquilos de Alta Gracia, Departamentos Arrayanes cuenta con las instalaciones perfectas para que sus merecidas vacaciones sean vividas con toda la tranquilidad que necesita.
+                   La opción en alojamiento turístico ideal para la familia.A solo cinco cuadras del centro de la ciudad, encontrará en esta zona la comodidad y la fácil accesibilidad  si desea salir a comer o abastecerse de bienes y servicios durante su estadía. También así Alta Gracia cuenta con una posición privilegiada, ya que si usted desea visitar sus alrededores lograra hacerlo en tan solo unos pocos kilómetros. Vengan a conocernos!.</p>
+              </div>
 
-             <div className="box-2">
-               <img src={image1} alt="" className="img-box-2"/>
-             </div>
+                <div className="box-2">
+                   <img src={image1} alt="" className="img-box-2"/>
+                </div>
 
            </div>
              

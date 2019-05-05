@@ -27,7 +27,7 @@ class Header extends Component {
 
            <div className="navUl">
              <ul>
-               {this.navigationItems.items.map((item, i)=> <NavItem key={i} data={item} /> )}
+               { this.navigationItems.items.map((item, i) => <NavItem key={i} data={item} /> ) }
              </ul>
            </div>
 

@@ -1,5 +1,4 @@
 @import "./_default.scss";
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
 
 .scroll {
     background-color: rgba(0,0,0,.72);
@@ -40,5 +39,11 @@
 
 .scroll a:hover {
   transition: .4s ease-in-out;
-  color: #ffc050;
+  color:#ffd9a8;
+}
+
+.scroll nav i {
+    position: relative;
+    bottom: 20px;
+    right: 158px;
 }
