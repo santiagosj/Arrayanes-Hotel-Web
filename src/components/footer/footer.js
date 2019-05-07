@@ -15,7 +15,7 @@ class Footer extends Component{
       <div style={stylesFooter} >
          <ul style={stylesFooter.ulStyle}>
             <li style={stylesFooter.liStyle}>Encontranos en Facebook</li><br/>
-            <li style={stylesFooter.liStyle}>Telefono: 03547-429157 </li><br/>
+            <li style={stylesFooter.liStyle}>Telefonos: 03547-429157 / 03547-15510209</li><br/>
             <li style={stylesFooter.liStyle}>Direccion: ViceInt.Doctor Jorge Nahal 235</li>
          </ul>
       </div>

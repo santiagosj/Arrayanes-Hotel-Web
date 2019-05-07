@@ -1,6 +1,6 @@
 @import "./_default.scss";
 
-                                  //MENU
+                                 //MENU
 //==========================================================================
 .scrollNone {
       background-color: initial;
@@ -230,4 +230,13 @@ text-decoration: none;
     }
   }
  
+}
+
+@media screen and (max-width:1199px){
+  .about-1{
+    .box-2{
+      position: relative;
+      top:130px;
+    }
+  }
 }
