@@ -103,14 +103,33 @@ text-decoration: none;
 
                                 //HOME CONTENT
 //==============================================================================
+   .about-1,.about-2{
+     display: flex;
+   }
+
   //Content 1
-  .about-1 .box-2 img {
-    width: 500px;
+  .about-1 {
+    padding: 20px;
+    .box-1{
+      margin-right: 20px
+    }
+    .box-2 {
+      img {
+        width: 500px;
+      }
+    }
   }
   //Content 2
-  .about-2 .box-4 img{
-    width: auto;
-    height: 500px;
+  .about-2 {
+    padding: 20px;
+    padding-bottom: 5%;
+    .box-3 {
+      margin-right: 100px;
+      img{
+        width: auto;
+        height: 500px;
+      }
+    }
   }
 
                                     //PAGES
