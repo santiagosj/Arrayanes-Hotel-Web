@@ -1,7 +1,9 @@
 import React from 'react'
-import sample from '../../assets/videos/River.mp4'
+import sample1 from '../../assets/videos/River.mp4'
+import sample2 from '../../assets/videos/Golondrina.mp4'
+import sample3 from '../../assets/videos/Robin.mp4'
 
-const VIDEO = [sample]
+const VIDEO = [sample1,sample2,sample3]
 
 const styles = {
     width:'100%'
@@ -11,7 +13,7 @@ class Video extends React.Component{
    constructor(props){
        super(props)
        this.state={
-           src: VIDEO[0]
+           src: VIDEO[2]
        }
    }
 
