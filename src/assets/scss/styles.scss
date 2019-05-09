@@ -1,6 +1,5 @@
 @import "./_default.scss";
-
-                                 //MENU
+                                  //MENU
 //==========================================================================
 .scrollNone {
       background-color: initial;
@@ -196,7 +195,7 @@
   .navUl{
     display:none;
   }
-  .navMobile{
+  .navMobile {
     transition: .4s ease-in-out;
     display: block;
     
@@ -236,7 +235,26 @@
       right: 158px;
     }
   }
- 
+  
+  .about-1, .about-2 {
+    flex-direction: column;
+  }
+
+  .about-1 {
+    .box-2{
+        img{
+          width: 410px;
+          position: relative;
+          bottom: 106px;
+        }
+       
+    }
+  }
+
+  .about-2{
+
+  }
+
 }
 
 @media screen and (max-width:1199px){
@@ -245,5 +263,11 @@
       position: relative;
       top:130px;
     }
+  }
+}
+
+@media screen and(max-width:950px){
+  .about-1, .about-2 {
+    flex-direction: column;
   }
 }

@@ -5,24 +5,20 @@
     margin-left: 10px;
 }
 
-.footer ul li .c-wapp{
+.footer ul li .c-icon {
     width:  33px;
     height: 33px;
     fill: currentColor;
     transition: .2s;
 }
 
-.footer ul li .c-icon {
-    width:  36px;
-    height: 36px;
-    fill: currentColor;
-    transition: .2s;
-}
-
 .footer ul li .c-link--facebook:hover  { color: #3b5998 }
 .footer ul li .c-link--wapp:hover      { color: #25D366 }
+.footer ul li .c-link--map:hover       { color:  #dd4b39}
 .footer ul li .c-link--facebook:hover::after  { background: #3b5998 }
 .footer ul li .c-link--wapp:hover::after      { background: #25D366 }
+.footer ul li .c-link--map:hover::after       { background:  #dd4b39 }
+
 
 .footer ul li .c-link {
     position: relative;
@@ -45,15 +41,15 @@
 
 .footer ul li .c-tooltip::before {
     content: '';
-    bottom: calc(100% + -8px);
+    bottom: calc(100% + 2px);
     border: solid 5px transparent;
     border-top-color: currentColor;
 }
 
 .footer ul li .c-tooltip::after {
     content: attr(aria-label);
-    bottom: calc(100% + 2px);
-    padding: 1.35em 2.93em;
+    bottom: calc(100% + 12px);
+    padding: .61em .93em;
     font-size: .875rem;
     color: white;
     border-radius: 3px;

@@ -7,9 +7,17 @@
     ul{
       padding: 20px;
       margin-bottom:0;
+      display: -webkit-inline-box;
       li{
         padding:15px;
       }
     }
+  }
+
+  @media screen and (max-width:600px){
+    .footer{
+      width: max-content;
+    }
+    
   }
   
