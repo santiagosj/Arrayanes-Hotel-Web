@@ -22,8 +22,6 @@
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
           
-        
-
           ul, li {
             margin: 0;
             padding: 0;
@@ -189,12 +187,12 @@ form{
 @media screen and (max-width:600px){
   .contenedor{
     h1{
-      left:14%;
+      left:20%;
     }
     
     h2{
        top: 64%;
-       left: 7%;
+       left: 10%;
     }
 
     .mask{
@@ -263,8 +261,15 @@ form{
        
     }
   }
-
- 
+  .about-2{
+    .box-3{
+      img{
+        left: 50px;
+        position:relative;
+        bottom: 29px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width:1199px){
