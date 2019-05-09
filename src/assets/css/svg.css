@@ -41,14 +41,14 @@
 
 .footer ul li .c-tooltip::before {
     content: '';
-    bottom: calc(100% + -9px);
+    bottom: calc(100% + -7px);
     border: solid 5px transparent;
     border-top-color: currentColor;
 }
 
 .footer ul li .c-tooltip::after {
     content: attr(aria-label);
-    bottom: calc(100% + 1px);
+    bottom: calc(100% + 3px);
     padding: .61em .93em;
     font-size: .875rem;
     color: white;

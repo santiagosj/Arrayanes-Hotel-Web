@@ -32,7 +32,7 @@
   font-size: 20px;
   letter-spacing: 1px;
 
-  @include button(#000000b5,
+  @include button(#3d3d3d,
   "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
   3000%,
   100%,
@@ -51,6 +51,9 @@
 
 
 .mas {
+ background-color: #ffd9a8;
+ height: 100%;
+ line-height: 48px;
  position: absolute;
  color: #000;
  text-align: center;
@@ -59,7 +62,6 @@
  font-weight: 300;
  position: absolute;
  font-size: 20px;
- margin-top: 9px;
  overflow: hidden;
 }
 
