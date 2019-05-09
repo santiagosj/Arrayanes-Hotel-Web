@@ -24,9 +24,12 @@ const images = [image1,image2,image3,image4,image5,image6];
        const {photoIndex,isOpen} = this.state;
      return (
        <div>
-           <button type="button" onClick={() => this.setState({ isOpen: true })}>
-               Instalaciones Dpto 2
-           </button>
+            <div className="button-container-2">
+            <span class="mas">Instalaciones Dpto 2</span>
+              <button type="button" id='work' name="Hover" onClick={() => this.setState({ isOpen: true })}>
+                  Instalaciones Dpto 2
+              </button>
+            </div>  
                   {isOpen && (
               <Lightbox
                   mainSrc={images[photoIndex]}

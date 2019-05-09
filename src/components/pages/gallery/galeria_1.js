@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Lightbox from 'lightbox-react';
 import 'lightbox-react/style.css';
+import "../../../assets/css/buttons.min.css"
 import image1 from '../../../assets/images/dpto1/PANO_20161026_103215.jpg'
 import image2 from '../../../assets/images/dpto1/PANO_20161026_103924.jpg'
 import image3 from '../../../assets/images/dpto1/PANO_20161026_171238.jpg'
@@ -26,9 +27,12 @@ class Galeria extends Component{
      return (
 
         <div>
-            <button type="button" onClick={() => this.setState({ isOpen: true })}>
-                Instalaciones Dpto 1
-            </button>
+            <div className="button-container-2">
+            <span class="mas">Instalaciones Dpto 1</span>
+              <button type="button" id='work' name="Hover" onClick={() => this.setState({ isOpen: true })}>
+                  Instalaciones Dpto 1
+              </button>
+            </div>  
                    {isOpen && (
                <Lightbox
                    mainSrc={images[photoIndex]}
