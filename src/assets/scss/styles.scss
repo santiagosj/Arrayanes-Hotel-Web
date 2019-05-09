@@ -12,53 +12,60 @@
       font-family: 'Julius Sans One', sans-serif;
       z-index: 100;
       transition: background-color 1s ease 0s,height 1s ease 0s;
- }
 
-.scrollNone nav {
-  position: relative;
-  top: 64%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  right: 0;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+      nav {
+        position: relative;
+        top: 64%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+          
+        
 
-.scrollNone nav ul, li {
-  margin: 0;
-  padding: 0;
-}
+          ul, li {
+            margin: 0;
+            padding: 0;
+          }
 
-.scrollNone a:hover {
-    transition: .4s ease-in-out;
-    color:#ffd9a8;
-}
+          ul{
+            li {
+              
+             
+              a:hover {
+                transition: .4s ease-in-out;
+                color:#ffd9a8;
+              }
+              a::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: #ffd9a8;
+                transition: width .3s ;
+              }
+    
+              a:hover::after {
+                width: 100%;
+              }
+    
+              a:hover {
+                color:#ffd9a8;
+                text-decoration: none;
+              }
+              
+            } 
+
+          }
+
+        }
+  }
+
 
 .navMobile {
   display: none;
-}
-
-li{
-  margin-bottom: 10px;
-}
-
-a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #ffd9a8;
-  transition: width .3s ;
-}
-
-a:hover::after {
-  width: 100%;
-  // transition: width .3s;
-}
-a:hover {
-color:white;
-text-decoration: none;
 }
 
 
@@ -131,10 +138,6 @@ text-decoration: none;
       }
     }
   }
-                                    //FOOTER
-  //============================================================================
-
-
                                     //PAGES
   //============================================================================
 
@@ -201,7 +204,7 @@ text-decoration: none;
     ul{
       position: absolute;
       left:0;
-      top: 36px;
+      top: 39px;
       background-color:#000000a6;
       width: 100%;
       padding: 20px;
@@ -211,6 +214,7 @@ text-decoration: none;
       display: inline-block;
       width: 100%;
       height: 74.4px;
+      
     }
     li:hover{
       transition: .4s ease-in-out;
@@ -218,8 +222,8 @@ text-decoration: none;
     }
     a{
       position: absolute;
-      font-size: 29px;
-      line-height: 58px;
+      font-size: 25px;
+      line-height: normal;
       
       color: #fff;
       text-decoration: none;

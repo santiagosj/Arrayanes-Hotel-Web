@@ -13,7 +13,7 @@ class Video extends React.Component{
    constructor(props){
        super(props)
        this.state={
-           src: VIDEO[2]
+           src: VIDEO[1]
        }
    }
 
