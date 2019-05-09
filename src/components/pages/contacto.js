@@ -1,5 +1,6 @@
 import React , { Component } from 'react';
 import Form from './formulario/formulario';
+import Mapa from './formulario/map'
 
 class Contacto extends Component {
   render(){
@@ -16,15 +17,20 @@ class Contacto extends Component {
 
            <h1>Formulario de Contacto</h1>
 
-             <br/>
-              <hr/>
-             <br/>
+           <br/>
+             <hr/>
+           <br/>
 
-           <Form />
-           <hr/>
+              <Form />
+                <hr/>
+              <Mapa/>
+           
+           <br/>
+            <hr/>
+           <br/>
+
         </div>
-        
-        <br/>
+          
       </section>
     )
   }
