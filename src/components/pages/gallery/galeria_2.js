@@ -25,7 +25,7 @@ const images = [image1,image2,image3,image4,image5,image6];
      return (
        <div>
             <div className="button-container-2">
-            <span class="mas">Instalaciones Dpto 2</span>
+            <span className="mas">Instalaciones Dpto 2</span>
               <button type="button" id='work' name="Hover" onClick={() => this.setState({ isOpen: true })}>
                   Instalaciones Dpto 2
               </button>

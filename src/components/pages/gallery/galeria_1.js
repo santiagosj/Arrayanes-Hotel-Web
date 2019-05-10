@@ -28,7 +28,7 @@ class Galeria extends Component{
 
         <div>
             <div className="button-container-2">
-            <span class="mas">Instalaciones Dpto 1</span>
+            <span className="mas">Instalaciones Dpto 1</span>
               <button type="button" id='work' name="Hover" onClick={() => this.setState({ isOpen: true })}>
                   Instalaciones Dpto 1
               </button>

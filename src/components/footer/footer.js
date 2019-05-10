@@ -26,6 +26,13 @@ class Footer extends Component{
                 </a>
             </li>
          </ul>
+
+        <div className="footerLog color-4">
+           <h1 className="h1--Arrayanes"> 
+              <span data-letters="ARRAYANES">ARRAYANES</span>
+           </h1>
+        </div>
+         
       </div>
     )
   }
