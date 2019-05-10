@@ -43,13 +43,8 @@ class Header extends Component {
   }
 
   dropDownMenu(){
-       let links = document.querySelector('.dropDownLinks')
-       if(links.style.display === 'none'){
-          links.style.display = 'block';
-       }else{
-          links.style.display = 'none';
-       }
-      //links.style.display === 'block' ? links.style.display ='none' : links.style.display ='block';
+       let links = document.querySelector('.dropDownLinks') 
+       links.style.display === 'block' ? links.style.display ='none' : links.style.display ='block';
     }
 
 }

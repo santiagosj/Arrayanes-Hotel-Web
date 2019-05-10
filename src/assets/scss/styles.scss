@@ -1,5 +1,5 @@
 @import "./_default.scss";
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
                                   
                                 //MENU
 //==========================================================================
@@ -12,8 +12,8 @@
       top: 0;
       z-index: 100;
       transition: background-color 1s ease 0s,height 1s ease 0s;
-      font-family: 'Lato', sans-serif;
-      
+      font-family: 'Poiret One', cursive;
+
       nav {
         position: relative;
         top: 64%;
@@ -29,7 +29,7 @@
             padding: 0;
           }
 
-         .navUl ul{
+            ul{
                 li {
                  a:hover {
                      transition: .4s ease-in-out;
@@ -42,23 +42,22 @@
                    height: 2px;
                    background: #ffd9a8;
                    transition: width .3s ;
-              }
+                }
     
-              a:hover::after {
-                width: 100%;
-              }
+                 a:hover::after {
+                     width: 100%;
+                  }
     
-              a:hover {
-                color:#ffd9a8;
-                text-decoration: none;
-              }
-             
- 
-            } 
+                 a:hover {
+                    color:#ffd9a8;
+                    text-decoration: none;
+                }
+
+              } 
+
+            }
 
           }
-
-        }
   }
 
 
@@ -91,6 +90,7 @@
     color:#ffd9a8;
     font-size: 10vw;
     letter-spacing: 9px;
+    font-family: 'Poiret One', cursive;
     top: 33%;
     left: 19%;
   }
@@ -99,6 +99,7 @@
      position: absolute;
      color:#ffd9a8;
      letter-spacing: 9px;
+     font-family: 'Poiret One', cursive;
      top: 64%;
      left: 21%;
      font-size: 3vw;
@@ -216,15 +217,14 @@ form{
     transition: .4s ease-in-out;
     display: block;
     
-
     ul{
       position: absolute;
       left:0;
-      top: 39px;
+      top: 38px;
       background-color:#000000a6;
       width: 100%;
       padding: 20px;
-      height: 400px;
+      height: 395px;
     }   
     li{
       display: inline-block;
@@ -240,7 +240,6 @@ form{
       position: absolute;
       font-size: 25px;
       line-height: normal;
-      
       color: #fff;
       text-decoration: none;
     }

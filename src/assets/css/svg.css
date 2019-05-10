@@ -3,6 +3,7 @@
     color: inherit;
     padding: 0;
     margin-left: 10px;
+    overflow: hidden;
 }
 
 .footer ul li .c-icon {
