@@ -8,42 +8,39 @@ class Servicios extends Component {
         <div className="headImg serv">
             <div className="maskPages"></div> 
         </div>
-
-          <h1>Nuestros servicios</h1>
-
+            <br/>
            <div className="container">
-
+           <h1>Desayunos secos de elaboración casera</h1>
+              <br/>
+                <hr/>
             <div className="desayunos">
 
-              <h2>Desayunos secos de elaboración casera</h2>
-
-                <br/>
-                <hr/>
-
-                <h3>Desayuno Completo</h3>
-                 
-                 <ul>
-                   <li>Infusión a elección (Café, té o mate cocido)</li>
-                   <li>Jugo de naranja</li>
-                   <li>2 rodajas de pan casero</li>
-                   <li>Manteca y Dulce</li>
-                   <li>1 Porción de pasta frola</li>
-                   <li>1 Alfajor de Maizena o 2 rodajas de budín (naranja o vainilla)Adicionales:  Manteca, mermelada, azúcar, edulcorante y leche en polvo.</li>
-                   <li>Adicionales:  Manteca, mermelada, azúcar, edulcorante y leche en polvo.</li>
-                 </ul>
-
+                <div className="desayuno-1">
+                   <h2>Desayuno Completo</h2>
+                       <ul>
+                          <li>Infusión a elección (Café, té o mate cocido)</li> - <br/>
+                          <li>Jugo de naranja</li> - <br/>
+                          <li>2 rodajas de pan casero</li> - <br/>
+                          <li>Manteca y Dulce</li> - <br/>
+                          <li>1 Porción de pasta frola</li> - <br/>
+                          <li>1 Alfajor de Maizena o 2 rodajas de budín (naranja o vainilla)Adicionales:  Manteca, mermelada, azúcar, edulcorante y leche en polvo.</li> 
+                          <li>Adicionales:  Manteca, mermelada, azúcar, edulcorante y leche en polvo.</li>
+                       </ul>
+                </div>
+                
                  <br/>
                  <hr/>
 
-               <h3>Desayuno Simple</h3>
-               
-                 <ul>
-                   <li>Infusión a elección ( Café, té o mate cocido)</li>
-                   <li>2 rodajas de pan casero</li>
-                   <li>Adicionales: Manteca, mermelada, Azúcar, edulcorante y leche en polvo.</li>
-                 </ul>
-
-            </div>
+                <div className="desayuno-2">
+                     <h2>Desayuno Simple</h2>
+                     <ul>
+                        <li>Infusión a elección ( Café, té o mate cocido)</li>
+                        <li>2 rodajas de pan casero</li>
+                        <li>Adicionales: Manteca, mermelada, Azúcar, edulcorante y leche en polvo.</li>
+                    </ul>
+                </div>
+                    
+              </div>
                 
                 <br/>
                 <hr/>

@@ -1,5 +1,6 @@
 @import "./_default.scss";
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
                                   
                                 //MENU
 //==========================================================================
@@ -31,6 +32,7 @@
 
             ul{
                 li {
+
                   a{
                     font-size: 33px;
                   }
@@ -113,6 +115,9 @@
                                 //HOME CONTENT
 //==============================================================================
    .about-1,.about-2{
+     h1{
+      font-family: 'Poiret One', cursive;
+     }
      display: flex;
    }
 
@@ -140,7 +145,7 @@
       }
     }
   }
-                                    //PAGES
+                                    //PAGES GENERAL
   //============================================================================
 
   .maskPages{
@@ -176,15 +181,83 @@
 
                                   //CONTACT
 //===============================================================================
-form{
-    width:50%;
-    display: inline-block;
+ .mainContact {
 
+   .container{
+ 
+     form{
+       width:50%;
+       display: inline-block;
+     }
+
+   }
+   
+ }
+
+
+                              //INSTALACIONES
+//===============================================================================
+
+.mainInst{
+   
+  .container{
+     
+     .listas{
+         display: flex;
+         flex-direction: row;
+         
+        ul{
+          
+          .btn-1,.btn-2{
+            max-width: 220px;
+           }
+        }
+         
+
+      }
+    
+   }
+
+}
+
+@media screen and (max-width:760px){
+  
+.mainInst{
+   
+  .container{
+     
+     .listas{
+         display: flex;
+         flex-direction: column;
+      
+      }
+    
+    }
+
+  }
+
+}
+                              //SERVICIOS
+//===============================================================================
+
+
+.mainServ{
+
+  .container{
+
+    .desayunos{
+
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
 
 
 
-                                      //MEDIA--QUERIES
+
+
+                              //MEDIA--QUERIES
 //===============================================================================
 
 //Landing

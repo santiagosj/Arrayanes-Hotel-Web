@@ -63,7 +63,6 @@ class Form extends Component {
     const { formData, submitted } = this.state;
     return(
       <div>
-      <div>
       <ValidatorForm
               id="contact-form"
               ref="form"
@@ -125,9 +124,6 @@ class Form extends Component {
                 </Button>
             </ValidatorForm>
       </div>
-
-
-            </div>
     )
   }
 }

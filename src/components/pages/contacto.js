@@ -21,7 +21,8 @@ class Contacto extends Component {
              <hr/>
            <br/>
 
-              <Form />
+              <Form />     
+             
                 <hr/>
               <Mapa/>
            
