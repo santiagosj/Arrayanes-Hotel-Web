@@ -10,6 +10,8 @@
       padding: 20px;
       margin-bottom:0;
       display: -webkit-inline-box;
+      position: relative;
+      top:14px;
       li{
         padding:15px;
       }
@@ -19,8 +21,8 @@
       cursor: pointer;
        display: inline-block;
        position: relative;
-       bottom: 26px;
-       left: 186px;
+       bottom: 8px;
+       left: 226px;
        text-align: -webkit-center;
        z-index: 1;
        color:#212121;

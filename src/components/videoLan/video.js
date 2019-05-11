@@ -1,8 +1,8 @@
 import React from 'react'
 import sample1 from '../../assets/videos/River.mp4'
-import sample2 from '../../assets/videos/Golondrina.mp4'
 
-const VIDEO = [sample1,sample2]
+
+const VIDEO = [sample1]
 
 const styles = {
     width:'100%'
