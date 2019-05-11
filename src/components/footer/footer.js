@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import FacebookIcon from '../Icons/Facebook'
 import Wapp from '../Icons/Wapp'
 import PlaceholderNew from '../Icons/PlaceholderNew'
+import SvgCopy from '../Icons/Copy'
+
 import '../../assets/css/svg.css'
 import '../../assets/css/footer.min.css'
 
@@ -31,8 +33,11 @@ class Footer extends Component{
            <h1 className="h1--Arrayanes"> 
               <span data-letters="ARRAYANES">ARRAYANES</span>
            </h1>
-        </div>
-         
+        </div><br/>
+             <hr/>
+              <div className="firmaContenedor">
+                 <a className="firma" href="https://santiagosj.github.io/" target="_blank"><SvgCopy /> Santiago Spinetto Jung</a>
+              </div>
       </div>
     )
   }

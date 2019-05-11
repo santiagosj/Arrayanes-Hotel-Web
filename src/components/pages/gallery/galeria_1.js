@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import Lightbox from 'lightbox-react';
 import 'lightbox-react/style.css';
 import "../../../assets/css/buttons.min.css"
-import image1 from '../../../assets/images/dpto1/PANO_20161026_103215.jpg'
-import image2 from '../../../assets/images/dpto1/PANO_20161026_103924.jpg'
-import image3 from '../../../assets/images/dpto1/PANO_20161026_171238.jpg'
-import image4 from '../../../assets/images/dpto1/PANO_20161026_104707.jpg'
-import image5 from '../../../assets/images/dpto1/Baño-depto-1B.jpg'
-import image6 from '../../../assets/images/dpto1/patiointerno.jpg'
-import image7 from '../../../assets/images/dpto1/PANO_20161026_110707.jpg'
-import image8 from '../../../assets/images/dpto1/PANO_20161026_170357.jpg'
+import image1 from '../../../assets/images/dpto1/living2.jpg'
+import image2 from '../../../assets/images/dpto1/cocina2.jpg'
+import image3 from '../../../assets/images/dpto1/patio2.jpg'
+import image4 from '../../../assets/images/dpto1/habitacion2.jpg'
+import image5 from '../../../assets/images/dpto1/baño.jpg'
+import image6 from '../../../assets/images/dpto1/asador.jpg'
+import image7 from '../../../assets/images/dpto1/pieza2.jpg'
+import image8 from '../../../assets/images/dpto1/cochera.jpg'
 
 const images = [ image1, image2, image3, image4, image5, image6,image7,image8];
 

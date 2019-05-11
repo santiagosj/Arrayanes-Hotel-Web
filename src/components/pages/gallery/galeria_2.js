@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Lightbox from 'lightbox-react';
 import 'lightbox-react/style.css';
-import image1 from '../../../assets/images/dpto2/20161026_112924.jpg';
+import image1 from '../../../assets/images/dpto2/cocina.jpg';
 import image2 from '../../../assets/images/dpto2/habitacion.jpg';
-import image3 from '../../../assets/images/dpto2/estar360TV.jpg';
-import image4 from '../../../assets/images/dpto2/PANO_20161026_170357.jpg';
-import image5 from '../../../assets/images/dpto2/estar360aire.jpg';
+import image3 from '../../../assets/images/dpto2/TV2.jpg'
+import image4 from '../../../assets/images/dpto2/cochera.jpg';
+import image5 from '../../../assets/images/dpto2/aire.jpg';
 import image6 from '../../../assets/images/dpto2/baño.jpg';
 
 const images = [image1,image2,image3,image4,image5,image6];
