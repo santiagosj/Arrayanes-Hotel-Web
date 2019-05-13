@@ -34,8 +34,8 @@ class Servicios extends Component {
                 <div className="desayuno-2">
                      <h2>Desayuno Simple</h2>
                      <ul>
-                        <li>Infusión a elección ( Café, té o mate cocido)</li>
-                        <li>2 rodajas de pan casero</li>
+                        <li>Infusión a elección ( Café, té o mate cocido)</li> - <br/>
+                        <li>2 rodajas de pan casero</li> - <br/>
                         <li>Adicionales: Manteca, mermelada, Azúcar, edulcorante y leche en polvo.</li>
                     </ul>
                 </div>
