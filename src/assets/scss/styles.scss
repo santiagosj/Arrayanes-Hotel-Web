@@ -277,13 +277,20 @@
       height: 98.5%;
     }
   }
-
-     form {
-       width:100%;
-    }
+   
+  
+     
 }
   
-
+@media screen and(max-width:770px){
+  .mainContact{
+    .container{
+       form {
+        width:100%;
+      }
+    }
+  }
+}
 
 @media screen and(max-width:850px){
   .navUl{
@@ -296,7 +303,7 @@
     ul{
       position: absolute;
       left:0;
-      top: 38px;
+      top: 22px;
       background-color:#000000a6;
       width: 100%;
       padding: 20px;
@@ -322,9 +329,9 @@
       i{
       color:white;
       font-size: xx-large;
-      position: relative;
-      bottom: 60px;
-      right: 158px;
+      position: fixed;
+      bottom: 10px;
+      right: 86%;
     }
   }
   
@@ -356,6 +363,14 @@
 @media screen and(max-width:950px){
   .about-1, .about-2 {
     flex-direction: column;
+  }
+  
+  .mainServ{
+    .container{
+      .desayunos{
+        flex-direction: column;
+      }
+    }
   }
 }
 

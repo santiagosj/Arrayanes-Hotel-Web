@@ -23,7 +23,7 @@ class Servicios extends Component {
                           <li>2 rodajas de pan casero</li> - <br/>
                           <li>Manteca y Dulce</li> - <br/>
                           <li>1 Porción de pasta frola</li> - <br/>
-                          <li>1 Alfajor de Maizena o 2 rodajas de budín (naranja o vainilla)Adicionales:  Manteca, mermelada, azúcar, edulcorante y leche en polvo.</li> 
+                          <li>1 Alfajor de Maizena o 2 rodajas de budín (naranja o vainilla)</li>
                           <li>Adicionales:  Manteca, mermelada, azúcar, edulcorante y leche en polvo.</li>
                        </ul>
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import sample1 from '../../assets/videos/River.mp4'
+import sample1 from '../../assets/videos/River.webm'
 
 
 const VIDEO = [sample1]
@@ -19,7 +19,7 @@ class Video extends React.Component{
   render(){
       return(
           <video className="video" style={styles}autoPlay loop muted>
-              <source src={this.state.src} type="video/mp4"></source>
+              <source src={this.state.src} type="video/webm"></source>
           </video>
       )
   }
