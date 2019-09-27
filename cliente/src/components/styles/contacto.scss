@@ -1,0 +1,135 @@
+.container-contacto{
+    display: flex;
+    flex-wrap: wrap;
+    height: -webkit-fill-available;
+    letter-spacing: 4px;
+    & div > h1::first-letter , h2::first-letter{
+       font-size: 50px;
+    }
+    .brand{
+        width: 10%;
+        order: 0;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        height: -webkit-fill-available;
+        justify-content: center; 
+        background-color: white;
+        &::after{
+           content:'';
+           height: 90%;
+           border-right: 1px solid black;
+           position: absolute;
+           z-index: 1;
+        }    
+
+             p{
+               margin: 0 auto 0 auto;
+               z-index: 3;
+               background-color: white;
+               font-size: 50px;
+               
+              }
+
+              .page{
+                 position: absolute;
+                 font-size: 20px;
+                 bottom: 0;
+                 
+              }
+     }
+      
+      [class |= "box"]{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+      }
+
+      [class $= "container"]{
+        width: 100%;
+      }
+      
+      .box-1{
+         margin: 50px auto;
+         order: 2;
+         padding: 20px 0;
+         border-bottom: 2px dotted black;
+         border-top: 2px dotted black;
+        .datos-container{
+           .datos{
+            width: 80%;
+            margin: auto;
+            font-family: monospace;
+            & p:first-of-type {
+               font-size: 20px;
+            }
+             p{
+                font-size: 17px;
+             }
+           }
+        }
+      }
+
+     .box-2{
+         margin:80px auto 0;
+         order:1;
+         .form-container{
+            h1{
+               font-size: 5vw;
+               &::first-letter{
+                  font-size: 50px;
+               }
+            }
+         }
+     }
+     .box-3{
+        order: 3;
+     }
+
+}
+
+
+@media screen and (min-width:900px){
+   .container-contacto{
+     
+      .brand{
+         width: 8%;
+           .page{
+              bottom: 23px;
+             }
+         }   
+
+         .box-1{
+            width: 50%;
+            background-image: url('../../assets/images/cerezo-blanco.png');
+            background-position: center;
+            background-size: cover;
+            order: 1;
+            margin: 31px auto;
+            border:none;
+            .datos-container{
+               background-color: #ffffffa1;
+               .datos{
+                  position: relative;
+                  left: 50px;
+               }
+            }
+         }
+         .box-2{
+           width: 50%;
+           order: 2;
+           .form-container{
+              h1{
+               font-size: 3vw;
+              }
+           }
+          }
+      .box-3{
+         
+      }
+  }
+  
+}
+

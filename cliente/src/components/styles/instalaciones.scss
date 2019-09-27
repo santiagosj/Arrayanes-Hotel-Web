@@ -1,0 +1,161 @@
+.container-instalaciones{
+    display: flex;
+    flex-wrap: wrap;
+    height: -webkit-fill-available;
+
+    .box-1{
+        width: 10%;
+        order: 0;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        height: -webkit-fill-available;
+        justify-content: center; 
+        background-color: white;
+        &::after{
+           content:'';
+           height: 90%;
+           border-right: 1px solid black;
+           position: absolute;
+           z-index: 1;
+        }    
+             p{
+                 margin: 0 auto 0 auto;
+                 z-index: 3;
+                 background-color: white;
+                 font-size: 50px;
+                
+              }
+              .page{
+                 position: absolute;
+                 font-size: 20px;
+                 bottom: 0;
+                
+              }
+     }
+
+
+    .box-2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url('../../assets/images/floresfoto.jpeg');
+        background-position: center;
+        background-attachment: fixed;
+        .content-container{
+            background-color: #ffffff7d;
+            
+             .title{
+                height: 80px;
+                margin-top: 80px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                 h2{
+                    font-size: 106px;
+                   
+                 }
+                 p{
+                    letter-spacing: 11px;
+                    font-size: 15px;
+                 }
+             }
+           .deptos-container{
+               margin-bottom: 50px;
+                
+                .dpto-1-container,.dpto-2-container{
+                    width: 100%;
+                    h2{
+                        font-family: monospace;
+                        letter-spacing: 4px;
+                    }
+                    ul{
+                        text-align: left;
+                        margin-left: 28px;
+                        letter-spacing: 4px;
+                        line-height: 1.6;
+                        font-size: 13.5px;
+                        font-family: monospace;
+                    }
+                   
+                    .btn{
+                        width: 31%;
+                        height: 24px;
+                        margin: 50px auto;
+                    }
+                }
+                 
+                 .dpto-1-container{
+                     margin-bottom: 80px;
+                 }
+
+            }
+            
+        }
+        
+    }
+
+}
+
+@media screen and (min-width:1150px){
+    
+    .container-instalaciones{
+       
+        .box-1{
+            width: 8%;
+              .page{
+                 bottom: 23px;
+                }
+            }    
+                
+                  .box-2{
+                    width: 86%;
+                    margin: auto 0px;
+                    .content-container{
+                        margin: 32px 0px;
+                         .title{
+                            position: relative;
+                            top: -55px;
+                            justify-content: center;
+                            left: 3%;
+                         }
+                       .deptos-container{
+                           display: flex;
+                           width: 80%;
+                           margin: auto;
+                           position: relative;
+                           bottom: 58px;
+                           
+                        .dpto-1-container, .dpto-2-container{
+                            margin: 0;
+                            .btn{
+                                margin: 0 auto;
+                             }
+                        }
+                        .dpto-2-container{
+                            position: relative;
+                            left: 70px;
+                            &::before{
+                                content:'';
+                                height: 100%;
+                                position: absolute;
+                                border-left:1px solid black;
+                                left: -26px;
+                            }
+                            ul{
+                                margin-bottom: 34px;
+                            }
+                          }
+                       
+                       }
+                        
+                    }
+                    
+        }
+    
+    }
+           
+}

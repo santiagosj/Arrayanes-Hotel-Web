@@ -1,0 +1,180 @@
+.scroll{
+  background-color:white;
+  box-shadow: 0 0.5em 1.5em rgba(0,0,0,.3);
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  z-index: 100;
+  transition: background-color 1s ease 0s,height 1s ease 0s;
+}
+
+
+label {
+  display: inline-block;
+  position: fixed;
+  top: -18px;;
+  right: 15px;
+  z-index: 2;
+  height: 70px;
+  width: 91px;
+  
+  p{
+    position: relative;
+    top: 50px;
+    left: -39px;
+    margin: 0;
+    display: inline;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 17px;
+  }
+   .menu{
+        position: absolute;
+        right: 15px;
+        top: 28px;
+        z-index: 100;
+        width: 60px;
+        height: 60px;
+        background: transparent;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        &:hover{
+          transition: .5s ease-in-out;
+          box-shadow: 0 0 0 1px black;
+        }
+        .hamburger{
+              position: absolute;
+              top: 41%;
+              left: 10px;
+              width: 40px;
+              height: 2px;
+              background: #000;
+              display: block;
+              transform-origin: center;
+              transition: .5s ease-in-out;
+            &:after,
+            &:before {
+              transition: .5s ease-in-out;
+              content: "";
+              position: absolute;
+              display: block;
+              width: 100%;
+              height: 100%;
+              background: #000;
+            }
+            &:before {
+              top: 0px;
+            } 
+            &:after {
+              bottom: -10px;
+              width: 26px;
+              right: 0px;
+            }
+        }
+    }
+
+    input {
+        display: none;
+      }
+      input:checked + .menu {
+        box-shadow:  0px 0px 0px 100vh #fff, 0 0 0 100vw #0000009c;
+        background-color: #fff;
+
+        .hamburger {
+          transform: rotate(45deg);
+          &:after {
+            transform: rotate(90deg);
+            bottom: 0;
+            width: 40px;
+          }
+          &:before {
+            transform: rotate(90deg);
+            top: 0;
+          }
+        }
+      }
+      
+      input:checked + .menu + ul {
+        width: 250px;
+        padding: 0;
+        opacity: 1;
+        margin: auto;
+        position: relative;
+        -webkit-transform: translate(-100%, 50%);
+        transform: translate(-100%, 50%);
+        transition: .25s ease-in-out;
+        font-family: monospace;
+        .brand::before{
+          content: 'A';
+          height: 100%;
+          position: absolute;
+          color: white;
+          top: 0;
+          right: 0;
+          width: 10px;
+          font-size: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: 'canvas-regular';
+          
+        } 
+      }
+      
+      ul {
+        width: 250px;
+        padding: 0;
+        z-index: 200;
+        position: relative;
+        -webkit-transform: translate(87%, 50%);
+        transform: translate(87%, 50%);
+        opacity: 0;
+        margin: auto;
+        transition: transform .25s, opacity .25s ease-in-out;
+        font-family: monospace;
+        &::after ,&::before{
+          content:'';
+          border-bottom:1px solid black;
+          width: 130px;
+          position: absolute;
+          left: 43%;
+          
+        }
+        &::after{
+          bottom: -25px;
+          
+        }
+        &::before{
+           top:-25px;
+        }
+        li{
+          list-style-type: none;
+          padding-right: 15px;
+          a{
+              width: 153%;
+              margin: 0;
+              background-color: transparent;
+              font-size: large;
+              display: block;
+              color: #000;
+              text-decoration: none;
+              letter-spacing: 4px;
+              padding: 26px 15px;
+              transition: .5s ease-in-out;
+              &:hover{
+                transition: .5s ease-in-out;
+                font-style: italic;
+                color: white;
+                background-color: #000; 
+              }
+            
+         }
+          
+      }
+      
+    }
+
+ }
+

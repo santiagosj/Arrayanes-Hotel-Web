@@ -1,0 +1,17 @@
+.button{
+    background: black;
+    color: white;
+    border: 1px solid black;
+    font-family: monospace;
+    height: 40px;
+    width: 140px;
+    font-size: 17px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: .5s ease-in-out; 
+    &:hover{
+        background: white;
+        color: black;
+        transition: .5s ease-in-out; 
+    }
+}

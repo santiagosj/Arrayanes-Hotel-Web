@@ -1,10 +1,9 @@
 <?php
 
-require 'vendor/autoload.php';
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+require 'vendor/autoload.php';
 
 $inputJSON = file_get_contents('php://input');
 $input = json_decode($inputJSON, TRUE);
@@ -13,47 +12,30 @@ $name = $input['name'];
 $email = $input['email'];
 $message = $input['message'];
 
-$developmentMode = false;
-$mailer = new PHPMailer($developmentMode);
+$mail = new PHPMailer(true);
 
-   try {
-       $mailer->SMTPDebug = 4;
-       $mailer->isSMTP(true);
-
-     if ($developmentMode) {
-       $mailer->SMTPOptions = [
-         'ssl'=>[
-           'verify_peer'=>false,
-           'verify_peer_name'=>false,
-           'allow_self_signed' => true
-         ]
-       ];
-     }
-
-  $mailer->Host ='smtp.gmail.com';
-  $mailer->SMTPAuth = true;
-  $mailer->Username = 'sendermail@mail.com';
-  $mailer->Password ='XXXXXXXXXXXXXXXXXXXXX';
-  $mailer->SMTPSecure='tls';
-  $mailer->Port = 587;
-
-  $mailer->setFrom('sendermail@mail.com','Arrayanes-Web');
-  $mailer->addAddress('mailto@mail.com','Juan de los palotes');
-
-  $mailer->isHTML(false);
-  $mailer->Subject = 'Consulta';
-  $mailer->Body = <<<EOT
-    Email: $email
-    Name: $name
-    Message: $message
+try {
+    $mail->SMTPDebug = 2;
+    $mail->isSMTP(true);
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'sanjs965@gmail.com';
+    $mail->Password = 'contraseñasupersecreta';
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
+    ## MENSAJE A ENVIAR
+    $mail->setFrom('sanjs965@gmail.com');
+    $mail->addAddress('sanjs965@gmail.com');
+    $mail->isHTML(true);
+    $mail->Subject = 'Consulta alojamiento';
+    $mail->Body = <<<EOT
+        Email: $email
+        Name: $name
+        Message: $message
 EOT;
+    $mail->send();
+} catch (Exception $exception) {
+    echo 'Algo salio mal', $exception->getMessage();
+}
 
-  $mailer->send();
-  $mailer->ClearAllRecipients();
-  echo"MENSJE ENVIADO!";
-
-   } catch (\Exception $e) {
-     echo"CUACK!" . $mailer->ErrorInfo;
-   }
-
- ?>
+?>

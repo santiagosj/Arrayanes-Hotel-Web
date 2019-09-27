@@ -1,0 +1,16 @@
+.map-container{
+    iframe{
+        width: 80%;
+        margin: 20px auto 30px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .map-container{
+        iframe{
+            width: 85%;
+            margin: 20px 0 100px 24px;
+        }
+    }
+}

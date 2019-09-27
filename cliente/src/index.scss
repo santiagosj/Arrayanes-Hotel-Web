@@ -1,0 +1,41 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,body,#root, #root > div{
+  height: 100%;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'canvas-regular'
+  }
+ 
+  body::-webkit-scrollbar{
+    display: none;
+  }
+
+  html::-webkit-scrollbar{
+    display: none;
+  }
+ 
+  h1, h2 {
+    font-family: 'canvas-bold';
+  }
+
+  @font-face{
+    font-family: 'canvas-regular';
+    src:url('../src/assets/fonts/MADE\ Canvas\ Regular\ PERSONAL\ USE.otf');
+    font-weight: 100;
+  }
+  @font-face{
+    font-family: 'canvas-light';
+    src: url('../src/assets/fonts/MADE\ Canvas\ Light\ PERSONAL\ USE.otf');
+    font-weight: 100;
+  }
+  @font-face{
+    font-family: 'canvas-bold';
+    src:url('../src/assets/fonts/MADE\ Canvas\ Black\ PERSONAL\ USE.otf');
+    font-weight: 400;
+  }
