@@ -178,3 +178,15 @@ label {
 
  }
 
+
+ @media screen and (min-width:550px){
+   label{
+
+     input:checked + .menu + ul{
+        -webkit-transform: translate(-150%, 50%);
+         transform: translate(-150%, 50%);
+     }
+     
+   }
+  
+ }

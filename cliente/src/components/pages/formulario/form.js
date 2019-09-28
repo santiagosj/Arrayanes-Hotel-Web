@@ -94,7 +94,7 @@ class Form extends Component {
        message:message
     }
    }).then((response) => {
-            response.data ? alert(`Gracias por ponerte en contacto ${name}, intentaremos ponernos en contacto a la brevedad`): alert(`Mil disculpas ${name}estamos teniendo problemas con el servicio de mail, podes comunicarte con nosotros vía facebook o al 03547-429157`) 
+            response.data ? alert(`Gracias por ponerte en contacto ${name}, intentaremos responder a la brevedad, te recordamos que también tenes la opcion de enviarnos un mensaje por facebook o llamarnos al 03547-429157`): alert(`Mil disculpas ${name}estamos teniendo problemas con el servicio de mail, podés comunicarte con nosotros vía facebook o al 03547-429157`) 
             console.log(response.data)
    }).catch(error => this.setState({error:error}, ()=>{console.log(error)}))
 
@@ -125,7 +125,7 @@ class Form extends Component {
 
                 <div className="input-container">
                        <input id="name"
-                           placeholder={`Escribí acá tu nombre por favor...`}
+                           placeholder={`Tu nombre...`}
                            onChange={this.handleChange}
                            name="name"
                            value={this.state.name}
@@ -140,7 +140,7 @@ class Form extends Component {
 
                <div className="input-container">
                    <input id="email"
-                        placeholder="acá va tu e-mail..."                  
+                        placeholder="Tu e-mail..."                  
                         onChange={this.handleChange}
                         value={this.state.email}
                         name="email"

@@ -138,16 +138,16 @@
                     .overlay-text{
                         color: white;
                         letter-spacing: 4px;
-                        font-size: 18px;
+                        font-size: 15px;
                         position: absolute;
-                        width: 366px;
-                        top: 45%;
+                        width: 83%;
+                        top: 40%;
                         left: 59%;
                         padding: 0 20px;
                         -webkit-transform: translate(-50%, -50%);
                         -ms-transform: translate(-50%, -50%);
                         transform: translate(-50%, -50%);
-                        text-indent: 50px;
+                        
                        
                         & > p::before{
                             content: '';
@@ -155,11 +155,11 @@
                             border-bottom: 1px solid white;
                             position: absolute;
                             background: white;
-                            bottom: 0;
-                            left: 100px;
+                            left: 34px;
+                            top: 172px;
                         }
                         & > p::first-letter{
-                                font-size: 65px;
+                                font-size: 160px;
                                 height: 10px;
                         }
                         
