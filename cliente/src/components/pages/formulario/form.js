@@ -94,8 +94,9 @@ class Form extends Component {
        message:message
     }
    }).then((response) => {
-            response.data ? alert(`Gracias por ponerte en contacto ${name}, intentaremos responder a la brevedad, te recordamos que también tenes la opcion de enviarnos un mensaje por facebook o llamarnos al 03547-429157`): alert(`Mil disculpas ${name}estamos teniendo problemas con el servicio de mail, podés comunicarte con nosotros vía facebook o al 03547-429157`) 
-            console.log(response.data)
+           
+      response.data ? alert(`Gracias por ponerte en contacto ${name}, intentaremos responder a la brevedad, recordá que también tenés la opción de enviarnos un mensaje por facebook o llamarnos al 03547-429157, saludos!`): alert(`Mil disculpas ${name} estamos teniendo problemas con el servicio de mail, podés comunicarte con nosotros vía facebook o al 03547-429157, gracias, saludos!`) 
+
    }).catch(error => this.setState({error:error}, ()=>{console.log(error)}))
 
    this.setState({submitted:true})
