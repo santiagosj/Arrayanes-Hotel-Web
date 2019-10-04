@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="129" height="200" viewBox="0 0 129 200">
+<defs>
+<style>
+.a{
+    fill:none;
+    stroke:#000;
+    stroke-width:0.7px;
+    font-size:175px;
+    font-family:MADECanvas-Black, MADE Canvas;
+    font-weight:800;
+    letter-spacing:0.3em;
+    }
+    </style>
+    </defs>
+    <text class="a" transform="translate(1 155)">
+      <tspan x="0" y="0">A</tspan>
+    </text>
+    </svg>

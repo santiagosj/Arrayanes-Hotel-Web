@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Logo from '../../assets/svg/aHome.svg'
 import '../styles/home.scss'
 
 
@@ -14,7 +14,7 @@ const Home = () => {
             <section className="box-2">
                 <div className="content-2">
                     <div className="cuadro">
-                        <h3>A</h3>
+                        <img src={Logo} alt=""/>
                         <h3>rra</h3>
                         <h3>yanes</h3>
                     </div>

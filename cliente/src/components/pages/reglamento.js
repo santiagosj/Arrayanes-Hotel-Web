@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/reglamento.scss'
 import image from '../../assets/images/succulentas.png'
+import hojas from '../../assets/images/hojas.png'
 
 const Reglamento = () => {
     return (
@@ -63,6 +64,7 @@ const Reglamento = () => {
                 </div>
 
             </section>
+            <img src={hojas}  className="hojas" alt="" />
         </main>
     )
 }

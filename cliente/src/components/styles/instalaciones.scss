@@ -97,6 +97,12 @@
         }
         
     }
+    img{
+        position: fixed;
+        width: 500px;
+        right: -258px;
+        
+       }
 
 }
 
@@ -155,7 +161,10 @@
                     }
                     
         }
-    
+        img{
+            right: -119px;
+        }
+     
     }
            
 }

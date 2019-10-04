@@ -51,19 +51,31 @@
       text-align: center;
         .content-2{
             
-            .cuadro{
+            .cuadro {
                 font-family: 'canvas-bold';
                 width: fit-content;
                 margin: auto;
-                border: 1px solid black;
+                box-shadow: inset 0px 0px 0px 1px, inset 0px 0px 0px 1px;
                 font-size: 43px;
                 position: relative;
                 letter-spacing: 50px;
                 text-align: left;
+                padding: 8px;
+                & h3:first-of-type{
+                    margin-top: 0;
+                }
+                & h3:last-child{
+                    margin-bottom: 0;
+                }
+                img{
+                    width: 132px;
+                    height: fit-content;
+                }
                  p{
                     margin: 25px 0;
                     padding: 10px;
                  }
+                 
             }
             .wellcome{
                 position: relative;
@@ -72,6 +84,9 @@
                     font-size: 37px;
                     letter-spacing: 8px;
                     font-weight: 100;
+                    margin: 0;
+                    position: relative;
+                    bottom: 6px;
                  }
             }
         }
@@ -142,6 +157,7 @@
                 left: 49px;
                   .cuadro{
                       font-size: 50px;
+                      padding: 20px;
                   }
                   .wellcome{
                     top: 24px;
