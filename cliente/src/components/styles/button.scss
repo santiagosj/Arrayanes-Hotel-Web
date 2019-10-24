@@ -10,11 +10,36 @@
     letter-spacing: 1px;
     transition: .5s ease-in-out; 
     position: absolute;
+    right: 20%;
     display: block;
     z-index: 1;
     &:hover{
         background: white;
         color: black;
         transition: .5s ease-in-out; 
+    }
+}
+
+@media screen and(max-width:400px){
+    .button{
+        background: black;
+        color: white;
+        border: 1px solid black;
+        font-family: monospace;
+        height: 40px;
+        width: 140px;
+        font-size: 17px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        transition: .5s ease-in-out; 
+        position: absolute;
+        right: 30%;
+        display: block;
+        z-index: 1;
+        &:hover{
+            background: white;
+            color: black;
+            transition: .5s ease-in-out; 
+        }
     }
 }
