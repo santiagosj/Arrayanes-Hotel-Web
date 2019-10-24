@@ -3,8 +3,6 @@ import axios from 'axios';
 import './form.scss'
 import '../../styles/button.scss'
 
-
-
 const validateForm = (errors) => {
    let valid = true;
    Object.values(errors).forEach(
@@ -183,7 +181,8 @@ class Form extends Component {
                
                       <br /><br />
 
-                  <button 
+                  <button
+                        style={{right: "20%"}}
                         className="button"
                         raised="true"
                         type="submit"
