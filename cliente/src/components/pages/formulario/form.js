@@ -40,6 +40,7 @@ class Form extends Component {
 //evento de cambio
 
    handleChange(e){
+
       const expRegEmail = RegExp(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/i)
 
       const { name, value } = e.target;
@@ -48,16 +49,16 @@ class Form extends Component {
 
       switch(name){
          case "name": 
-           errors.name = value.length < 3 ? "El nombre es obligatorio" : '';
+           errors.name = value.length < 3 && value.length === 0 ? "El nombre es obligatorio" : '';
            break;
          case "email":
            errors.email = expRegEmail.test(value) ? '' : 'Formato de e-mail no válido';
            break;
          case "subject":
-            errors.subject = value.length < 5 ? "El asunto es obligatorio" : '';
+            errors.subject = value.length < 5 && value.length === 0 ? "El asunto es obligatorio" : '';
             break;
          case "message":
-            errors.message = value.length < 10 ? "La consulta está vacía" : '';
+            errors.message = value.length < 10 && value.length === 0 ? "La consulta está vacía" : '';
             break;
             default:
         break;
@@ -123,23 +124,24 @@ class Form extends Component {
                  <br/>
 
                 <div className="input-container">
-                       <input id="name"
-                           placeholder={`Tu nombre...`}
+                       <input 
+                           id="name"
+                           placeholder={`¿Cuál es tu nombre?`}
                            onChange={this.handleChange}
                            name="name"
                            value={this.state.name}
                            noValidate
                            required/>
-                          {errors.name.length > 0 && <span className="error error-name">{errors.name}</span>}
+                           {errors.name.length > 0 && <span className="error error-name" > {errors.name} </span>}
                </div>
               
                <br/>
-                 <p>Email:</p>
+                  <p>Email:</p>
                <br/>
 
                <div className="input-container">
                    <input id="email"
-                        placeholder="Tu e-mail..."                  
+                        placeholder={`¿Cuál es tu E-mail?`}                  
                         onChange={this.handleChange}
                         value={this.state.email}
                         name="email"
@@ -155,7 +157,7 @@ class Form extends Component {
                       
                   <div className="input-container">
                        <input id="subject"
-                           placeholder="¿Cuál es el asunto de tu consulta?"
+                           placeholder={`¿Cuál es el motivo de tu consulta?`}
                            onChange={this.handleChange}
                            value={this.state.subject}
                            name="subject"
@@ -171,7 +173,7 @@ class Form extends Component {
                   <div className="input-container">
                       <textarea id="message"
                            onChange={this.handleChange}
-                           placeholder="No olvides aclarar en tu consulta las fechas específicas y la cantidad de personas"
+                           placeholder={`No olvides aclarar la cantidad de personas, las fechas y la cantidad de días por las que desea consultar`}
                            value={this.state.message}
                            name="message"
                            required
@@ -182,13 +184,13 @@ class Form extends Component {
                       <br /><br />
 
                   <button
-                        style={{right: "20%"}}
                         className="button"
                         raised="true"
                         type="submit"
                         disabled={submitted || !this.state.name || !this.state.email || !this.state.subject || !this.state.message}
                   >
-                     {(submitted && 'Enviado')|| (!submitted && 'Enviar')}
+                     {(submitted && 'Enviado') || (!submitted && 'Enviar')}
+
                   </button>
            </form>
        )

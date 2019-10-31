@@ -1,9 +1,14 @@
 form{
+     display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     .input-container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         text-align: center;
         input{
             width: 70%;
@@ -17,8 +22,10 @@ form{
             background-color: transparent;
             &:focus{
                 transition: .3s ease-in-out;
-                font-size: 20px;
-                
+                font-size: 17px;
+            }
+            &::placeholder{
+                letter-spacing: 3px;
             }
            
         }
@@ -57,6 +64,7 @@ form{
 @media screen and (min-width:1000px){
     form{
         .input-container{
+           
             input{
                 width: 60%;
             }

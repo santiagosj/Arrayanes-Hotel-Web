@@ -178,7 +178,6 @@ label {
 
  }
 
-
  @media screen and (min-width:550px){
    label{
 
@@ -190,3 +189,13 @@ label {
    }
   
  }
+
+ @media screen and (max-width:660px) and (orientation: landscape){
+  label{
+
+    input:checked + .menu + ul {
+      -webkit-transform: translate(-100%, 13%);
+      transform: translate(-100%, 13%);
+    }
+  }
+}
