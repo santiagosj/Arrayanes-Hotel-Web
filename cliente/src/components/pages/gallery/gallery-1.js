@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Lightbox from 'lightbox-react';
 import 'lightbox-react/style.css';
 import '../../styles/button.scss'
-import image1 from '../../../assets/images/instalaciones/depto-1/living.jpg'
+
 import image2 from '../../../assets/images/instalaciones/depto-1/asador.jpg'
 import image3 from '../../../assets/images/instalaciones/depto-1/cocina.jpg'
 import image4 from '../../../assets/images/instalaciones/depto-1/patio.jpg'
@@ -11,7 +11,7 @@ import image6 from '../../../assets/images/instalaciones/depto-1/habitacion-m.jp
 import image7 from '../../../assets/images/instalaciones/depto-1/baño.jpg'
 import image8 from '../../../assets/images/instalaciones/depto-1/cochera.jpg'
 
-const images = [ image1, image2, image3, image4, image5, image6,image7,image8 ];
+const images = [ image2, image3, image4, image5, image6,image7,image8 ];
 
 class Galeria1 extends Component{
 

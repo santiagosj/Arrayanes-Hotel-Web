@@ -26,7 +26,7 @@ const Instalaciones = () => {
                     <ul>
                         <li>Capacidad para 6 personas</li>
                         <li>Dos dormitorios (Matrimonial y habitación con 4 camas)</li>
-                        <li>Amplio estar -Direct-Tv</li>
+                        <li>Amplio estar </li>
                         <li>Cocina completa (incluye microondas y vajilla)</li>
                         <li>Ambiente climatizado (Calefacción y aire acondicionado)</li>
                         <li>Asador y patio interno -Cochera cubierta -Incluye ropa blanca</li>
@@ -41,7 +41,7 @@ const Instalaciones = () => {
                             <ul>
                                 <li>Capacidad para 4 personas</li>
                                 <li>Dormitorio matrimonial</li>
-                                <li>Estar con dos camas -Direct-Tv</li>
+                                <li>Estar con dos camas </li>
                                 <li>Cocina completa ( incluye microondas y vajilla) </li>
                                 <li>Ambiente Climatizado (Calefacción y aire acondicionado)</li>
                                 <li>Cochera cubierta - Incluye ropa blanca </li>

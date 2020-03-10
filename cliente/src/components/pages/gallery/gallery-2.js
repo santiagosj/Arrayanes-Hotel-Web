@@ -8,9 +8,9 @@ import image2 from '../../../assets/images/instalaciones/depto-2/baño.jpg'
 import image3 from '../../../assets/images/instalaciones/depto-2/cochera.jpg'
 import image4 from '../../../assets/images/instalaciones/depto-2/cocina.jpg'
 import image5 from '../../../assets/images/instalaciones/depto-2/habitacion.jpg'
-import image6 from '../../../assets/images/instalaciones/depto-2/TV2.jpg'
 
-const images = [image1, image2, image3, image4, image5, image6] 
+
+const images = [image1, image2, image3, image4, image5] 
 
 class Galeria2 extends Component{
    constructor(props){
