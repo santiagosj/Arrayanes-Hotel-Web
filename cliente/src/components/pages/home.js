@@ -3,7 +3,6 @@ import Logo from '../../assets/svg/aHome.svg'
 import '../styles/home.scss'
 
 
-
 const Home = () => {
     return (
         <main className="container-home">
@@ -30,7 +29,11 @@ const Home = () => {
                          <p>osotros</p>
                       </div>
                      <div className = "nosotros-text-container">
-                         <p>Somos una pequeña empresa familiar dedicada al alojamiento turístico en Alta Gracia, y este es el ambiente con el que será recibido, un ambiente familiar y tranquilo. Nuestra idea es que ustedes se sientan tan cómodos como en su casa, que nuestras instalaciones les sean cálidas y logren sentirse a gusto durante su estadía.</p>
+                        
+                         <p>
+                           Somos una pequeña empresa familiar dedicada al alojamiento turístico en Alta Gracia, y este es el ambiente con el que será recibido, un ambiente familiar y tranquilo. Nuestra idea es que ustedes se sientan tan cómodos como en su casa, que nuestras instalaciones les sean cálidas y logren sentirse a gusto durante su estadía.
+                        </p>
+
                      </div>
                   </div>
             </section>

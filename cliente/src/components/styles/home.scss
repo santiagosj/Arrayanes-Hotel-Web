@@ -120,6 +120,7 @@
                 text-align: left;
                 width: 88%;
                 p{
+                    
                     letter-spacing: 4px;
                     line-height: 2;
                     font-size: 15px;
@@ -127,6 +128,18 @@
                     position: relative;
                     left: 5%;
                     font-family: monospace;
+                    &::before{
+                        content: 'Cerrado indefinidamente';
+                        color: white;
+                        background: rgba(255, 0, 0, 0.7);
+                        border: 1px solid red;
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        font-size: 6vw;
+                        text-align: center;
+                        height: 100%;
+                    }
                 }
             }
         }
@@ -177,6 +190,13 @@
             .content-3{
                 .nosotros-text-container{
                     margin: 0 39px;
+                    p{
+                        &::before{
+                         
+                            right: 50%;
+                            padding: 20px;
+                        }
+                    }
                 }
             }
         }
@@ -195,6 +215,13 @@
                 }
                 .wellcome{
                     left: 6%;
+                }
+            }
+        }
+        .box-3{
+            p{
+                &::before{
+                    right: auto;
                 }
             }
         }
