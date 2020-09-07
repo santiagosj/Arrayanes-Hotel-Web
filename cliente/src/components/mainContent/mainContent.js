@@ -5,12 +5,12 @@ import Instalaciones from '../pages/instalaciones'
 import Reglamento from '../pages/reglamento'
 import Contacto from '../pages/contacto'
 
-const style = {height:'100%'}
+
 
 class MainContent extends Component{
    render(){
        return(
-              <div className="mainContent" style={style}>
+              <div className="mainContent">
                   <Switch>
                       <Route exact path={'/'}component={Home}/>
                       <Route exact path={'/page2/Instalaciones'}component={Instalaciones}/>

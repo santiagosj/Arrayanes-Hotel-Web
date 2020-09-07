@@ -1,11 +1,28 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Logo from '../../assets/svg/aHome.svg'
 import '../styles/home.scss'
 
+function Home() {
+   
+    const [toggleClass, setToggleClass] = useState('');
+    
+    const [isActive, setIsActive] = useState(false)
+    
+    const active = () => setIsActive(!isActive)
 
-const Home = () => {
+    const toggleClassFunction = () => {
+        active();
+        setToggleClass('toggled')
+    }
+    
     return (
         <main className="container-home">
+            <div className={`covid-information ${toggleClass}`}>
+              <p> Los esperamos cuando todo esto termine y puedan venir a disfutar de nuestras hermosas sierras </p> 
+              <button onClick={toggleClassFunction}>
+                  aceptar
+              </button>
+            </div>
             <section className="box-1">
                      <p>A</p>
                      <p className="page">01</p>
