@@ -95,11 +95,8 @@
                 letter-spacing: 50px;
                 text-align: left;
                 padding: 8px;
-                & h3:first-of-type{
-                    margin-top: 0;
-                }
-                & h3:last-child{
-                    margin-bottom: 0;
+                h3{
+                    margin-bottom: auto;
                 }
                 img{
                     width: 132px;
