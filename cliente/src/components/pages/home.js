@@ -30,7 +30,7 @@ function Home() {
             <section className="box-2">
                 <div className="content-2">
                     <div className="cuadro">
-                        <img src={Logo} alt=""/>
+                        <h3 className="A">A</h3>
                         <h3>rra</h3>
                         <h3>yanes</h3>
                     </div>
