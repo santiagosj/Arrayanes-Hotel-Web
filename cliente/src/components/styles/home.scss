@@ -18,13 +18,18 @@
         font-family: monospace;
         padding:20px;
         transition: 3s ease-in-out;
+        flex-direction: column;
         p{
             width: 50%;
         }
         button{
-            position: absolute;
+           font-size: 25px;
             bottom: 19px;
-            
+            padding:20px;
+            width:150px;
+            color: white;
+            background: black;
+            border: none;
         }
     }
     .toggled{
