@@ -7,7 +7,8 @@
     .covid-information{
         color: black;
         background: pink;
-        z-index: 1;
+        z-index: 200;
+        top: 0;
         width: fit-content;
         position: absolute;
         display: flex;

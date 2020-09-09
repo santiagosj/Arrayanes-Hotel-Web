@@ -4,7 +4,7 @@ import Home from '../pages/home'
 import Instalaciones from '../pages/instalaciones'
 import Reglamento from '../pages/reglamento'
 import Contacto from '../pages/contacto'
-
+import '../styles/mainContent.scss'
 
 
 class MainContent extends Component{
