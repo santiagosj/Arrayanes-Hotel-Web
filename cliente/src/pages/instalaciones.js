@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/instalaciones.scss'
-import Galeria1 from './gallery/gallery-1'
-import Galeria2 from './gallery/gallery-2'
+import Galeria1 from '../components/gallery/gallery-1'
+import Galeria2 from '../components/gallery/gallery-2'
 import Logo from '../../assets/svg/arrayanesLogo.svg'
 
 const Instalaciones = () => {

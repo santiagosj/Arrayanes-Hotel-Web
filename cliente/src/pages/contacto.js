@@ -1,6 +1,6 @@
 import React from 'react';
-import Form from './formulario/form'
-import Mapa from './formulario/map'
+import Form from '../components/formulario/form'
+import Mapa from '../components/formulario/map'
 import '../styles/contacto.scss';
 
 const Contacto = () => {
