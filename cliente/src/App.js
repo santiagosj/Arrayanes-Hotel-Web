@@ -1,7 +1,7 @@
 import React from 'react';
 import AppHolder from './components/appHolder/appHolder'
 import {HashRouter} from 'react-router-dom'
-import './App.scss';
+// import './App.scss';
 
 function App() {
   return (

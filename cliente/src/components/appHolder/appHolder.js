@@ -1,45 +1,34 @@
-import React, { Component } from 'react';
+import React, {useState, useEffect} from 'react';
 import Header from '../Header/header'
 import MainContent from '../mainContent/mainContent'
 import Footer from '../footer/footer'
 import './appHolder.scss'
 
-class AppHolder extends Component{
+const AppHolder = () => {
 
-    constructor(props){
-        super(props)
+    const [one, setOne] = useState('menuOnTop')
 
-        this.state={
-            one:'menuOnTop'
+    const handleAnimation = () => {
+        if(document.documentElement.scrollTop > 100){
+            setOne('scroll')
         }
-    }
-   componentDidMount(){
-       window.onscroll = () => this.handleAnimation()
-   }
-
-   handleAnimation = () => {
-      if(document.documentElement.scrollTop > 100){
-          this.setState({
-              one:'scroll' //header.scss
-          })
-      }
-      if(document.documentElement.scrollTop === 0){
-          this.setState({
-              one:'menuOnTop' //appHolder.scss
-          })
-      }
-   }
-
-
-   render(){
+        if(document.documentElement.scrollTop === 0){
+            setOne('menuOnTop')
+        }
+     }
+     
+    useEffect(()=>{
+        window.onscroll = () => handleAnimation()
+    },[])
+   
        return(
            <div>
-                <Header classHeader={this.state.one}/>
+                <Header classHeader={one}/>
                   <MainContent/>
                 <Footer/>
            </div>
        )
-   }
+   
 }
 
 export default AppHolder
