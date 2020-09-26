@@ -9,10 +9,10 @@ class Header extends Component{
    
        this.navigationItems = {
            items:[
-               {link:'/',name:'Home'},
-               {link:'/page2/Instalaciones',name:'Instalaciones'},
-               {link:'/page3/Reglamento',name:'Reglamento'},
-               {link:'/page5/Contacto',name:'Contacto'}
+               {link:'/Home',name:'Home'},
+               {link:'/Instalaciones',name:'Instalaciones'},
+               {link:'/Reglamento',name:'Reglamento'},
+               {link:'/Contacto',name:'Contacto'}
            ]
        }
    }  

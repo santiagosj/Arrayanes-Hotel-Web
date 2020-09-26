@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import Logo from '../../assets/svg/aHome.svg'
 import '../styles/home.scss'
 
 function Home() {
