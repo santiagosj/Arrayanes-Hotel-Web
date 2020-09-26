@@ -1,25 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import NavItem from '../navItem/navItem'
 import './header.scss'
 
-class Header extends Component{
+const Header = ({classHeader}) => {
   
-   constructor(props){
-       super(props)
-   
-       this.navigationItems = {
+     const  navigationItems = {
            items:[
                {link:'/Home',name:'Home'},
                {link:'/Instalaciones',name:'Instalaciones'},
                {link:'/Reglamento',name:'Reglamento'},
                {link:'/Contacto',name:'Contacto'}
            ]
-       }
-   }  
-   render(){
+     }
+    
        return(
            
-              <header className={`${this.props.classHeader}`} >
+              <header className={`${classHeader}`} >
 
                   <label className="menu-wrap">
                       <p>MENÚ</p>
@@ -28,15 +24,15 @@ class Header extends Component{
                               <span className="hamburger"></span>
                           </span>
                                 <ul>
-                                    {this.navigationItems.items.map((item,i) => <NavItem key={i} data={item}/> )}
+                                    {navigationItems.items.map((item,i) => <NavItem key={i} data={item}/> )}
                                     <li className="brand"></li>
                                </ul>
                   </label>
 
                </header>
           
-       )
-   }
+      )
+   
 }
 
 export default Header 
