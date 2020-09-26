@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom'
 import Home from '../../pages/home'
 import Instalaciones from '../../pages/instalaciones'
@@ -6,8 +6,8 @@ import Reglamento from '../../pages/reglamento'
 import Contacto from '../../pages/contacto'
 import '../../styles/mainContent.scss'
 
-class MainContent extends Component{
-   render(){
+const MainContent = () =>{
+  
        return(
               <div className="mainContent">
                   <Switch>
@@ -19,7 +19,6 @@ class MainContent extends Component{
                   </Switch>
               </div>
        )
-   }
 }
 
 export default MainContent

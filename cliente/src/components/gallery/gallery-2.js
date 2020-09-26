@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Lightbox from 'lightbox-react';
 import 'lightbox-react/style.css';
 import '../../styles/button.scss'
@@ -12,40 +12,30 @@ import image5 from '../../assets/images/instalaciones/depto-2/habitacion.jpg'
 
 const images = [image1, image2, image3, image4, image5] 
 
-class Galeria2 extends Component{
-   constructor(props){
-       super(props)
-       this.state = {
-           photoIndex:0,
-           isOpen:false
-       }
-   }
+const Galeria2 = () =>{
+    const [photoIndex, setPhotoIndex] = useState(0)
+    const [isOpen, setIsOpen] = useState(false)
 
-   render(){
-       const {photoIndex, isOpen} = this.state;
        return(
         <div>
             <div >
-                <button className="button" type="button" id='work' name="Hover" onClick={() => this.setState({ isOpen: true })}>
+                <button className="button" type="button" id='work' name="Hover" onClick={() => setIsOpen(true)}>
                     Ver Depto 2
                 </button>
             </div> 
             {isOpen && (
-                <Lightbox  
-                    mainSrc={images[photoIndex]}
-                    nextSrc={images[(photoIndex + 1) % images.length]}
-                    prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                    onCloseRequest={() => this.setState({isOpen:false})}
-                    onMovePrevRequest={()=> this.setState({
-                        photoIndex:(photoIndex + images.length - 1) % images.length,
-                    })}
-                    onMoveNextRequest={()=> this.setState({
-                        photoIndex:(photoIndex + 1) % images.length,
-                    })}
-                />
-            )}
+                 <Lightbox
+                     mainSrc={images[photoIndex]}
+                     nextSrc={images[(photoIndex + 1) % images.length]}
+                     prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                     onCloseRequest={() => setIsOpen(false)}
+                     onMovePrevRequest={() =>
+                         setPhotoIndex((photoIndex + images.length - 1) % images.length)
+                     }
+                     onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % images.length)}
+                 />
+             )}
         </div>
        )
-   }
 }
 export default Galeria2;
