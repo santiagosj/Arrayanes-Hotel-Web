@@ -2,39 +2,37 @@ import React from 'react';
 import '../styles/reglamento.scss'
 import image from '../../assets/images/succulentas.png'
 import hojas from '../../assets/images/hojas.png'
+import MarginLeft from '../marginLeftNumber/marginLeft';
 
 const Reglamento = () => {
     return (
         <main className="container-reglamento">
 
-            <section className="box-1">
-                     <p>A</p>
-                     <p className="page">03</p>
-            </section>
+            <MarginLeft page={3} />
 
             <section className="box-2">
 
                 <div className="container">
-                      <img src={image} alt="" className="image"></img>
-                      <div className="overlay">
+                    <img src={image} alt="" className="image"></img>
+                    <div className="overlay">
 
-                          <div className="overlay-text">
-                              <p>
-                                  Cualquier consulta que desee realizar, no dude en comunicarse con nosotros.
-                              </p>              
-                          </div>
+                        <div className="overlay-text">
+                            <p>
+                                Cualquier consulta que desee realizar, no dude en comunicarse con nosotros.
+                            </p>
+                        </div>
 
-                      </div>
+                    </div>
 
                 </div>
                 <div className="foot-text">
-                   <i>Vengan a conocernos!</i> 
+                    <i>Vengan a conocernos!</i>
                 </div>
 
             </section>
 
             <section className="box-3">
-       
+
                 <div className="content-container">
                     <div className="title">
                         <h2>R</h2>
@@ -42,7 +40,7 @@ const Reglamento = () => {
                     </div>
                     <div className="reglamento">
                         <div className="intro">
-                             <p >Estimado huésped, nos gustaría informarle sobre nuestras políticas de reservas, no solo para optimizar nuestro servicios, sino también para promover una estructura de convivencia que nos ayude a regular el tráfico de consultas y dichas reservas.</p>
+                            <p >Estimado huésped, nos gustaría informarle sobre nuestras políticas de reservas, no solo para optimizar nuestro servicios, sino también para promover una estructura de convivencia que nos ayude a regular el tráfico de consultas y dichas reservas.</p>
                         </div>
                         <div className="reserva-efectiva">
                             <h2>Efectividad de Reserva</h2>
@@ -59,12 +57,12 @@ const Reglamento = () => {
                             <p>En caso de que usted decida quedarse mas días de los reservados, comuniquelo con la mayor anticipacion posible, por cuestiones de disponibilidad.</p>
                             <p>En caso contrario de que usted decida restar días de estadía, usted deberá abonar la cantidad de días reservados originalmente.</p>
                         </div>
-                         
+
                     </div>
                 </div>
 
             </section>
-            <img src={hojas}  className="hojas" alt="" />
+            <img src={hojas} className="hojas" alt="" />
         </main>
     )
 }

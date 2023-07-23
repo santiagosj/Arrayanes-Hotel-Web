@@ -6,39 +6,6 @@
     & div > h1::first-letter , h2::first-letter{
        font-size: 50px;
     }
-    .brand{
-        width: 10%;
-        order: 0;
-        position: fixed;
-        display: flex;
-        align-items: center;
-        height: -webkit-fill-available;
-        justify-content: center; 
-        background-color: white;
-        &::after{
-           content:'';
-           height: 90%;
-           border-right: 1px solid black;
-           position: absolute;
-           z-index: 1;
-        }    
-
-             p{
-               margin: 0 auto 0 auto;
-               z-index: 3;
-               background-color: white;
-               font-size: 50px;
-               
-              }
-
-              .page{
-                 position: absolute;
-                 font-size: 20px;
-                 bottom: 0;
-                 
-              }
-     }
-      
       [class |= "box"]{
          width: 100%;
          display: flex;

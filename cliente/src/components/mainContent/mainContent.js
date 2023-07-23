@@ -10,7 +10,7 @@ import '../styles/mainContent.scss'
 class MainContent extends Component{
    render(){
        return(
-              <div className="mainContent">
+              <div className="main-content">
                   <Switch>
                       <Route exact path={'/'}component={Home}/>
                       <Route exact path={'/page2/Instalaciones'}component={Instalaciones}/>
